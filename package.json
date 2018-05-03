@@ -1,0 +1,22 @@
+{
+  "name": "natour",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DevQNguyen/natour-css-jonas.git"
+  },
+  "author": "Quang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DevQNguyen/natour-css-jonas/issues"
+  },
+  "homepage": "https://github.com/DevQNguyen/natour-css-jonas#readme",
+  "devDependencies": {
+    "node-sass": "^4.9.0"
+  }
+}
