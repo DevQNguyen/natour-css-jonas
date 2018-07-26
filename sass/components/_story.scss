@@ -10,7 +10,7 @@
   //skew element shape
   transform: skewX(-12deg);
 
-  &_shape {
+  &__shape {
     width: 15rem;
     height: 15rem;
     float: left;
@@ -19,16 +19,50 @@
     -webkit-clip-path: circle(50% at 50% 50%);
     clip-path: circle(50% at 50% 50%);
     transform: translateX(-3rem) skewX(12deg);
+    position: relative;
   }
 
   // This sets height of img based on parent _shape  
-  &_img {
+  &__img {
     height: 100%;
+    transform: translateX(-4rem) scale(1.4);
+    backface-visibility: hidden;
   }
 
-  &_text {
+  &__text {
     transform: skewX(12deg);
   }
+
+  &__caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 20%);
+    color: $color-white;
+    text-transform: uppercase;
+    font-size: 1.7rem;
+    text-align: center;
+    opacity: 0;
+    transition: all .5s ease-in-out;
+    //to fix animation shaking
+    backface-visibility: hidden;
+  }
+
+  // reveal name upon hovering over img  
+  &:hover &__caption {
+    opacity: 1; 
+    transform: translate(-50%, -50%);
+  }
+
+  // blurring img upon hover
+  &:hover &__img {
+    transform: translateX(-4rem) scale(1);
+    filter: blur(3px) brightness(80%);
+  }
 }
+
+
+
+
 
 
