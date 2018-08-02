@@ -4,7 +4,7 @@
   padding: 6rem;
   padding-left: 9rem;
   box-shadow: 0 3rem 6rem rgba($color-black, .1);
-  background-color: $color-white;
+  background-color: rgba($color-white, .6);
   border-radius: 3px;
   font-size: $default-font-size;
   //skew element shape
@@ -60,6 +60,7 @@
     filter: blur(3px) brightness(80%);
   }
 }
+
 
 
 
