@@ -57,7 +57,7 @@
 
   &__item {
     margin: 1rem;
-    overflow: hidden;
+    //overflow: hidden;
   }
 
   &__link {
@@ -114,6 +114,7 @@
       display: inline-block;
     }
 
+    // we need to define content prop for bars to appear
     &::before,
     &::after {
       content: "";
@@ -138,6 +139,7 @@
     background-color: transparent;
   }
 
+  // when checkbox is checked, rotate bar
   &__checkbox:checked + &__button &__icon::before {
     top: 0;
     transform: rotate(135deg);
