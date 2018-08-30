@@ -32,6 +32,9 @@ $breakpoint argument choices:
 - tab-land
 - big-desktop
 
+**Media Query ORDER:
+Base + typography > general layout + grid > page layout > components
+
 ----Convert values to em instead of rem
 1em = 16px
 */
@@ -39,7 +42,7 @@ $breakpoint argument choices:
   @if $breakpoint == phone {
     @media (max-width: 37.5em) { @content };   //600px
   }
-  
+
   @if $breakpoint == tab-port {
     @media (max-width: 56.25em) { @content };    //900px
   }
@@ -52,4 +55,5 @@ $breakpoint argument choices:
     @media (min-width: 112.5em) { @content };   //1800px
   }
 }
+
 
